@@ -42,99 +42,49 @@
 
 <body>
     <header>
-      
-      <!-- NavBar -->
-
-        <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
-
-            <a class="navbar-brand">
-              <img src="https://content.codecademy.com/courses/learn-bootstrap-components/logo.png" alt="Gloria's Gardening Logo" height="30">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Weekly Specials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-        </nav> -->
-        
-        
-        <nav id="headGD" class="navbar navbar-expand-md navbar-light fixed-top">
-
-              <a class="navbar-brand" href="#">Carly Or</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropDown" data-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">About</a>
-                    </li>
-                </ul>
-              </div>
-
-      </nav>
-
-<!-- 
-        <nav id = "headGD" class="navbar navbar-expand-sm pb-3">
-
-          <a href="./home.html" class="navbar-brand text-dark">
-            <span class="fs-4">Carly Or</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Start of navigation bar --> 
+      <nav id="headGD" class="navbar navbar-expand-md navbar-light fixed-top">
+        <!-- Site logo - Carly Or -->
+        <a class="navbar-brand" href="./home.html">Carly Or</a>
+        <!-- Menu collaspe button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#carlyNavBar" data-toggle="collapse" data-bs-target="#carlyNavBar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            
-            <a class="nav-link dropdown-toggle" href="./Portfoilo_Photo.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Hong Kong BNW</a></li>
-              <li><a class="dropdown-item" href="#">Grandpa</a></li>
-              <li><a class="dropdown-item" href="../brazil.html">Brazil</a></li>
-            </ul>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
-          <a class="me-3 py-2 text-dark text-decoration-none" href="../contect page.html">About</a>
-          </div>
-      </nav> -->
+        </button>
+        <!-- Main menu -->
+        <div class="collapse navbar-collapse" id="carlyNavBar">
+          <ul class="navbar-nav ms-auto">
+            <!-- Menu - item 1: Projects(drop down)-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="projects">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <!-- Menu - item 2: Support-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <!-- Menu - item 3: Contact-->
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End of navigation bar --> 
     </header>
     
-<main>
-  <section class="section-1">
-                   
-    <div class="container-fluid align-items-center">
-            <div class="text-center">
-                        <h2 class="homeh2">Street Photographer</h2>
-                        <h2 class="homeh2">Street is my home</h2>
+    <main>
+      <section class="section-1">
+        
+        <div class="container-fluid align-items-center">
+          <div class="text-center">
+            <h2 class="homeh2">Street Photographer</h2>
+            <h2 class="homeh2">Street is my home</h2>
                 </div>
             </div>
 
@@ -254,5 +204,12 @@
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
   </body>
 </html>
