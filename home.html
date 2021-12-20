@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site title -->
     <title>Carly Or</title>
     
     <!-- Stylesheets linking -->
-    <!-- Bootstrap core-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Bootstrap caurosell-->
-    <!-- <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/"> -->
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./style.css">
     
@@ -23,49 +20,27 @@
     crossorigin="anonymous" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous" defer></script>
-    
-    <!-- IDK below -->
-    <!-- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0"> -->
-    
-    <!-- I think gathering fonts link in 1 css file is better -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
-
-    <!-- IDK below -->
-    <!-- spaceing password meaning https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
-    <!-- <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-    </style> -->
 </head>
 
 <body>
     <header>
       <!-- Start of navigation bar --> 
-      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top py-3">
         <!-- Site logo - Carly Or -->
-        <a class="navbar-brand" href="./home.html">Carly Or</a>
-        <!-- Menu collaspe button-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#carlyNavBar" data-toggle="collapse" data-bs-target="#carlyNavBar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Carly Or</a>
+        <!-- Menu collaspe button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-target="#carlyNavBar" data-toggle="collapse" data-bs-target="#carlyNavBar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Main menu -->
         <div class="collapse navbar-collapse align-items-center" id="carlyNavBar">
           <ul class="navbar-nav ml-auto">
-            <!-- Menu - item 1: Projects(drop down)-->
+            <!-- Menu - item 1: Projects(dropdown)-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projects
               </a>
+              <!-- Projects' dropdown menu -->
               <div class="dropdown-menu" aria-labelledby="projects">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -90,12 +65,12 @@
       <div class="container">
 
         <!-- Section-1: Title & Projects Slideshow-->
-        <section class="section-1">
+        <section style="margin-top: 153px;">
           <!-- Site title -->
           <div class="row">
               <div class="col text-center">
-                <h1 class="display-4">Street Photographer</h1>
-                <h1 class="display-4">Street is my home</h1>
+                <h1 class="display-4" style="font-weight: 800;">Street Photographer</h1>
+                <h1 class="display-4" style="font-weight: 800;">Street is my home</h1>
               </div>
           </div>
           <!-- Project slideshow-->
@@ -142,96 +117,92 @@
         </section>
         <!--End of section 1-->
           
-      <!-- Section-2: More Gallery -->
-          
-        <section class="section-2">
-          <div class="row gallery">
+      <!-- Section-2: Gallery - More Projects -->  
+        <section>
+          <!-- Title -->
+          <div class="row">
             <div class="col">
               <h2>The projects</h2>
             </div>
           </div>
-          <div class="row gallery">
-            <div class="col" style="height: 60vh;">
-              <img src="./Photo/Brazil/IMG_3040-2.jpg" class="" alt="..." style="   background-color: transparent;
-              padding-top: 3rem;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;">
-            </div>
-            <div class="col" style="  height: 60vh;">
-              <img src="./Photo/HKBNW/DSCF5702.jpg"  class="" alt="..." style="  background-color: transparent;
-              padding-top: 3rem;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;">
-            </div>
 
+          <!-- Gallery 1st row-->
+          <div class="row">
+            <!-- Box 1 -->
+            <div class="col-lg-6 mt-4" style="overflow: hidden;">
+              <!-- Change picture by src -->
+              <img src="./Photo/Brazil/IMG_3040-2.jpg" alt="..." style=" object-fit: cover;" class="w-100 h-100">
+            </div>
+            <!-- Box 2 -->
+            <div class="col-lg-6 mt-4" style="overflow: hidden;">
+              <!-- Change picture by src -->
+              <img src="./Photo/HKBNW/DSCF5702.jpg" alt="..." style="object-fit: cover;" class="w-100 h-100">
+            </div>
           </div>
-
-
-
-        <div class="row align-items-center">
-        <div class="col">
-        <img src="./Photo/HKBNW/DSCF5504.jpg" class="photo-show" alt="...">
-
-        </div>
-        <div class="col">
-        <div id="headingGroup" class="text-center d-lg-block mt-5">
-          <p class="">View<span>More</span></p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-
-        <h1><i class="bi bi-arrow-right"></i></h1>
-
-        </div>
-        </div>
-
-        </div>
+          <!-- Gallery 2nd row-->
+          <div class="row">
+            <!-- Box 3 -->
+            <div class="col-lg-6 mt-4" style="overflow: hidden;">
+              <!-- Change picture by src -->
+              <img src="./Photo/HKBNW/DSCF5504.jpg" alt="..." style="object-fit: cover;" class="w-100 h-100">
+            </div>
+            <!-- Box 4 -->
+            <div class="col-lg-6 mt-4" style="overflow: hidden;">
+              <div class="text-center d-block my-5 py-5">
+                <!-- Text -->
+                <h3 class="font-weight-bolder d-inline-block" style="font-size: 2.9rem; margin: 1rem 0;">More</h3>
+                <!-- Arrow -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="mb-3 d-inline-block bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
         </section>
-          
+        <!-- End of section 2 -->
+
       </div>
-        
-        
-        
-                
-  
-  </main>
- 
-  <!-- <div style="margin-top:120px;">    
-      <hr>
-        
-      <footer>
-          <div class="container-fluid">
-            <div class="row">
-                  
-          <div class="col-sm-4">
-          <h3>Message</h3>
-          <form action="">
-            <textarea placeholder="Type Here" name="Message" id="" cols="30" rows="6"></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        
-        </div>
-    
-        <div class="col-sm-4">
-          <h3>Social Media</h3>
-          <ul class="list-unstyled">
-          <li class="mb-1"><a class="link-dark text-decoration-none" href="https://instagram.com/carly_kwano?utm_medium=copy_link">Instagram</a></li>
-            <li class="mb-1"><a class="link-dark text-decoration-none" href="#">Fingir</a></li>
-            <li class="mb-1"><a class="link-dark text-decoration-none" href="#">Behance</a></li>
-            <li class="mb-1"><a class="link-dark text-decoration-none" href="#">Pinterest</a></li>
-        </ul>
-        </div>
-    
-        <div class="col-sm-4">
-          <h3>Email</h3>
-              <a href="mailto: ngakwano@gmail.com"> <a class="link-dark text-decoration-none" href="#"> ngakwano@gmail.com</a>
-        </div>
+    </main>
+
+    <!-- Divider line -->
+    <hr class="mt-5">
+
+    <footer>
+      <div class="container">
+          <div class="row">
+              <!-- Part 1: Message -->
+              <div class="col-md-6 mt-5">
+              <!-- Title -->
+              <h6 class="font-weight-bold">Message</h6>
+              <!-- Message box -->
+              <form action="">
+                  <textarea placeholder="Type Here" name="Message" id="" cols="30" rows="4"></textarea>
+                  <!-- Submit button -->
+                  <input type="submit" name="Submit" id="Submit" value="Submit">
+              </form>
+              
+              </div>
+              <!-- Part 2: Social Media -->
+              <div class="col-md-4 mt-5 social-media">
+              <!-- Title -->
+              <h6 class="font-weight-bold">Social Media</h6>
+              <!-- Social media list -->
+              <ul>
+                  <li><a href="https://instagram.com/carly_kwano?utm_medium=copy_link">Instagram</a></li>
+                  <li><a href="#">Fingir</a></li>
+                  <li><a href="#">Behance</a></li>
+                  <li><a href="#">Pinterest</a></li>
+              </ul>
+              </div>
+              <!-- Part 3: Email -->
+              <div class="col-md-2 mt-5"> 
+                  <!--Title-->
+                  <h6 class="font-weight-bold">Email</h6>
+                  <!-- Email link -->
+                  <a href="mailto: ngakwano@gmail.com">ngakwano@gmail.com</a>
+              </div>
+          </div>
+      </div>        
       </footer>
-    </div> -->
-
-
-    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>

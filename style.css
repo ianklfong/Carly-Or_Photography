@@ -19,57 +19,16 @@
 
 
 /* Universal Style */
-
-button .btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
 body {
   background-color: #faf7f1;
   font-family: "Didact Gothic", sans-serif;
 }
 
-/* Navigation Bar */
-.navbar {
-  background-color: #c4c4c4;
-  font-family: "Roboto", sans-serif;
-  padding: 20px 85px 30px 85px;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #000000;
+a {
+  color: black;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
 }
 
-/* Main */
-main,
-footer {
-  margin: 0 76px 0 76px;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 79px;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-h2 {
-  font-family: Didact Gothic;
-  font-size: 36px;
-  font-weight: 400;
-}
 
 hr {
   border: 1px solid #000000;
@@ -81,21 +40,59 @@ hr {
   color: #b7b3b3;
 }
 
-button {
+/* Button Style*/
+.btn1 {
+  border-radius: 0;
+  font-size: 16px; 
+  margin: 0;
+  cursor: pointer;
+  border: solid 3px black ;
+  padding: 6px 16px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 85px 30px 85px;
+}
+
+button.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+
+/* Footer */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input[type=submit] {
+  width: 30%;
+  float: left;
+  border: none;
+}
+
+/* Page: Contact */
+
+.comment {
+  text-align: left;
+}
+
+.comment input,textarea {
   background-color: transparent;
-  width: 168px;
-  height: 38px;
-  border: 1px solid #000000;
-  box-sizing: border-box;
+  border: solid 2px grey;
+  width: 100%;
+  resize: none;
 }
 
-.section-1 {
-  margin-top: 153px;
-}
 
-/* footer */
+
+/* Footer */
 footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 footer textarea {
@@ -109,81 +106,12 @@ textarea:focus {
   outline: none;
 }
 
-/* Home Page */
-
-.display-4 {
-  font-weight: 800;
+@media only screen and (min-width: 768px) {
+  footer .social-media {
+    padding-left: 3rem;
+  }
 }
-
 /* Project page */
 .gallery-photo {
   margin: 2rem 2rem;
-}
-
-/* Declare heights because of positioning of img element */
-
-
-
-
-/* contect page  */
-
-.center-cropped {
-  position: relative;
-  width: 400px;
-  height: 700px;
-  overflow: hidden;
-}
-
-.center-cropped img {
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.offer {
-  background-color: #f0f0f0;
-  padding: 30px;
-}
-
-#enterbox {
-  height: 2rem;
-  width: 30rem;
-  background-color: #faf7f1;
-}
-
-#messagebox {
-  height: 15rem;
-  width: 30rem;
-  background: #faf7f1;
-}
-
-/* @media (min-width: 782px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 742px) {
-  .row {
-    flex-direction: column;
-  }
-} */
-.photo-show {
-  background-color: transparent;
-  padding-top: 3rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 742px) {
-  .gallery {
-    flex-direction: column;
-  }
 }
