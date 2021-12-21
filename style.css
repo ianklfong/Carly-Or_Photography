@@ -17,7 +17,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
 /* Universal Style */
 body {
   background-color: #faf7f1;
@@ -29,6 +28,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 hr {
   border: 1px solid #000000;
@@ -38,6 +47,11 @@ hr {
   text-align: left;
   vertical-align: top;
   color: #b7b3b3;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
 }
 
 /* Button Style*/
@@ -57,38 +71,30 @@ hr {
   padding: 20px 85px 30px 85px;
 }
 
+.dropdown-item.active {
+  /*dropdown item style*/
+  color: #000000;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  /*dropdown-item style*/
+  color: #000000;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+   /*dropdown-item style*/
+  background-color: transparent;
+}
+
 button.navbar-toggler:focus {
+  /*collaspe button style*/
   border: none;
   outline: none;
 }
-
-/* Footer */
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-input[type=submit] {
-  width: 30%;
-  float: left;
-  border: none;
-}
-
-/* Page: Contact */
-
-.comment {
-  text-align: left;
-}
-
-.comment input,textarea {
-  background-color: transparent;
-  border: solid 2px grey;
-  width: 100%;
-  resize: none;
-}
-
-
 
 /* Footer */
 footer {
@@ -102,16 +108,45 @@ footer textarea {
   width: 100%;
 }
 
+input[type=submit] {
+  width: 30%;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+
 textarea:focus {
   outline: none;
 }
 
 @media only screen and (min-width: 768px) {
+  /*pad social media column while above large screen*/
   footer .social-media {
     padding-left: 3rem;
   }
 }
-/* Project page */
-.gallery-photo {
-  margin: 2rem 2rem;
+
+/* Page: Contact */
+.comment {
+  text-align: left;
+}
+
+.comment input,textarea {
+  background-color: transparent;
+  border: solid 2px grey;
+  width: 100%;
+  resize: none;
+}
+
+/* Page: Project - Gallery */
+.col-12 img {
+  opacity: 0.7;
+  cursor: pointer;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.col-12 img:hover {
+  opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
