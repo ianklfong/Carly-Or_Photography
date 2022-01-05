@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site title -->
+  <title>Support - Carly Or</title>
+
+  <!-- Stylesheets linking -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
+    defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"
+    defer></script>
+</head>
+
+<!-- simplebar -->
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+
+<body>
+  <header>
+    <!-- Start of navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-3">
+      <!-- Site logo - Carly Or -->
+      <a class="navbar-brand" href="./home.html">Carly Or</a>
+      <!-- Menu collaspe button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-target="#carlyNavBar"
+        data-toggle="collapse" data-bs-target="#carlyNavBar" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Main menu -->
+      <div class="collapse navbar-collapse align-items-center" id="carlyNavBar">
+        <ul class="navbar-nav ml-auto">
+          <!-- Menu - item 1: Projects(dropdown)-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="projects" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <!-- Projects' dropdown menu -->
+            <div class="dropdown-menu border-0" aria-labelledby="projects">
+              <a class="dropdown-item" href="./projects.html">All Projects</a>
+              <a class="dropdown-item" href="./projects/project_hkbnw.html">HKBNW</a>
+              <a class="dropdown-item" href="./projects/project_brazil.html">Brazil</a>
+            </div>
+          </li>
+          <!-- Menu - item 2: Support-->
+          <li class="nav-item">
+            <a class="nav-link" href="./support.html">Support</a>
+          </li>
+          <!-- Menu - item 3: Contact-->
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navigation bar -->
+  </header>
+
+  <div  id="loading-mask"></div>
+  <div class="wrapper" data-simplebar>
+    <main>
+
+      <div class="container-fluid col-lg-10" style="padding-top: 120px; padding-bottom: 120px;">
+        <h1 class="display-1" style="font-size: calc(42px + 2.5vw);">404 not found </h1>
+      </div>
+    </main>
+
+    <!-- Divider line -->
+    <hr class="mt-5">
+
+    <footer>
+      <div class="container-fluid col-lg-10">
+        <div class="row">
+          <!-- Part 1: Message -->
+          <div class="col-lg-6 mb-5">
+            <!-- Title -->
+            <h6 class="font-weight-bold">Message</h6>
+            <!-- Message box -->
+            <form action="">
+              <textarea placeholder="Type Here" name="Message" id="" cols="30" rows="4"></textarea>
+              <!-- Submit button -->
+              <input type="submit" name="Submit" id="Submit" value="Submit">
+            </form>
+          </div>
+          <!-- Part 2: Social Media -->
+          <div class="col-lg-4 mb-5 social-media">
+            <!-- Title -->
+            <h6 class="font-weight-bold">Social Media</h6>
+            <!-- Social media list -->
+            <ul>
+              <li><a href="https://instagram.com/carly_kwano?utm_medium=copy_link" target="_blank">Instagram</a></li>
+              <li><a href="#">Fingir</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+          <!-- Part 3: Email -->
+          <div class="col-lg-2 mb-5">
+            <!--Title-->
+            <h6 class="font-weight-bold">Email</h6>
+            <!-- Email link -->
+            <a href="mailto: ngakwano@gmail.com">ngakwano@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- cursor -->
+  <div class="cursor"></div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
